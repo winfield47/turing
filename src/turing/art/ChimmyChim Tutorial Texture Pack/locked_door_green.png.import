@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://30reoalj2wwt"
-path="res://.godot/imported/locked_door_blue.png-4e51ae1acabdcd76f747bf8ddccdfa13.ctex"
+uid="uid://dgsyg3godsmid"
+path="res://.godot/imported/locked_door_green.png-e174c9434421e9648c29748985f1240a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ChimmyChim Tutorial Texture Pack/locked_door_blue.png"
-dest_files=["res://.godot/imported/locked_door_blue.png-4e51ae1acabdcd76f747bf8ddccdfa13.ctex"]
+source_file="res://art/ChimmyChim Tutorial Texture Pack/locked_door_green.png"
+dest_files=["res://.godot/imported/locked_door_green.png-e174c9434421e9648c29748985f1240a.ctex"]
 
 [params]
 

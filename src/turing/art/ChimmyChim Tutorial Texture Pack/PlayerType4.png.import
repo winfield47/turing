@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dkp325qk2lnxa"
-path="res://.godot/imported/SmallCoin.png-8626368792283b998f4a5e2536a0ed41.ctex"
+uid="uid://dp6c26i0dhhh1"
+path="res://.godot/imported/PlayerType4.png-dc6db7b8939ce4ed46eb2a0db9667b74.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ChimmyChim Tutorial Texture Pack/SmallCoin.png"
-dest_files=["res://.godot/imported/SmallCoin.png-8626368792283b998f4a5e2536a0ed41.ctex"]
+source_file="res://art/ChimmyChim Tutorial Texture Pack/PlayerType4.png"
+dest_files=["res://.godot/imported/PlayerType4.png-dc6db7b8939ce4ed46eb2a0db9667b74.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://h1ckemwtyrlv"
-path="res://.godot/imported/key_green.png-6d196dd926df9479c93691178feb39d2.ctex"
+uid="uid://j1ssmq1n4e0a"
+path="res://.godot/imported/PlayerType1.png-b28ae6f9ecd50c42dd982fc8cb7a4a5c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ChimmyChim Tutorial Texture Pack/key_green.png"
-dest_files=["res://.godot/imported/key_green.png-6d196dd926df9479c93691178feb39d2.ctex"]
+source_file="res://art/ChimmyChim Tutorial Texture Pack/PlayerType1.png"
+dest_files=["res://.godot/imported/PlayerType1.png-b28ae6f9ecd50c42dd982fc8cb7a4a5c.ctex"]
 
 [params]
 

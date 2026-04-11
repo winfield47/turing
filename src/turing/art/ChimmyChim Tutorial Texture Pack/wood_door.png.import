@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://brmlem1no0dum"
-path="res://.godot/imported/key_blue.png-b63130b4dbf88f494fc7296f49f29b00.ctex"
+uid="uid://dnpygs7cpu8wa"
+path="res://.godot/imported/wood_door.png-f524cee7ece07f89d7b9ce41ddb41e1b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ChimmyChim Tutorial Texture Pack/key_blue.png"
-dest_files=["res://.godot/imported/key_blue.png-b63130b4dbf88f494fc7296f49f29b00.ctex"]
+source_file="res://art/ChimmyChim Tutorial Texture Pack/wood_door.png"
+dest_files=["res://.godot/imported/wood_door.png-f524cee7ece07f89d7b9ce41ddb41e1b.ctex"]
 
 [params]
 
