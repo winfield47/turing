@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://6uhxn0dbv7pp"]
+
+[ext_resource type="Texture2D" uid="uid://cd1hm3cfxcfl0" path="res://art/world/bush.png" id="1_a4y6f"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_uf87w"]
+
+[node name="Bush" type="StaticBody2D" unique_id=1236801693]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=495056217]
+texture = ExtResource("1_a4y6f")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1612198447]
+shape = SubResource("CircleShape2D_uf87w")
