@@ -517,7 +517,9 @@ nodes/StateMachine/node = SubResource("AnimationNodeStateMachine_dhv88")
 nodes/StateMachine/position = Vector2(40, 140)
 node_connections = [&"output", 0, &"StateMachine"]
 
-[node name="Player" type="CharacterBody2D" unique_id=941693548]
+[node name="Player" type="CharacterBody2D" unique_id=941693548 groups=["player"]]
+collision_layer = 2
+collision_mask = 5
 motion_mode = 1
 script = ExtResource("1_ldeu4")
 

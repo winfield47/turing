@@ -23,7 +23,7 @@ tracks/0/keys = {
 }
 
 [sub_resource type="Animation" id="Animation_t6has"]
-resource_name = "fly_right"
+resource_name = "fly"
 length = 0.5
 loop_mode = 1
 step = 0.1
@@ -43,39 +43,44 @@ tracks/0/keys = {
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_n6p16"]
 _data = {
 &"RESET": SubResource("Animation_r5q1t"),
-&"fly_right": SubResource("Animation_t6has")
+&"fly": SubResource("Animation_t6has")
 }
 
-[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_q7uuq"]
-animation = &"fly_right"
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_4jumo"]
+animation = &"fly"
 
-[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_7ek28"]
-animation = &"fly_right"
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_ywo6a"]
+animation = &"fly"
 
-[sub_resource type="AnimationNodeBlendSpace1D" id="AnimationNodeBlendSpace1D_cl8tq"]
-blend_point_0/node = SubResource("AnimationNodeAnimation_q7uuq")
-blend_point_0/pos = -0.90000004
-blend_point_1/node = SubResource("AnimationNodeAnimation_7ek28")
-blend_point_1/pos = 0.8
-blend_mode = 1
-
-[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_i5dmw"]
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_6o88b"]
 advance_mode = 2
 
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_pl3yt"]
+advance_mode = 2
+advance_expression = "player_is_visible()"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_4wqhf"]
+advance_mode = 2
+advance_expression = "not player_is_visible()"
+
 [sub_resource type="AnimationNodeStateMachine" id="AnimationNodeStateMachine_y7stb"]
-states/FlyState/node = SubResource("AnimationNodeBlendSpace1D_cl8tq")
-states/FlyState/position = Vector2(380, 100)
-transitions = ["Start", "FlyState", SubResource("AnimationNodeStateMachineTransition_i5dmw")]
-graph_offset = Vector2(-80, -89)
+states/Chase/node = SubResource("AnimationNodeAnimation_4jumo")
+states/Chase/position = Vector2(450, 236)
+states/Idle/node = SubResource("AnimationNodeAnimation_ywo6a")
+states/Idle/position = Vector2(450, 100)
+transitions = ["Start", "Idle", SubResource("AnimationNodeStateMachineTransition_6o88b"), "Idle", "Chase", SubResource("AnimationNodeStateMachineTransition_pl3yt"), "Chase", "Idle", SubResource("AnimationNodeStateMachineTransition_4wqhf")]
+graph_offset = Vector2(-131, 14)
 
 [sub_resource type="AnimationNodeBlendTree" id="AnimationNodeBlendTree_q7uuq"]
-graph_offset = Vector2(-289, -15)
+graph_offset = Vector2(-145, -42)
 nodes/StateMachine/node = SubResource("AnimationNodeStateMachine_y7stb")
 nodes/StateMachine/position = Vector2(20, 100)
 node_connections = [&"output", 0, &"StateMachine"]
 
-[node name="CaveBat" type="RigidBody2D" unique_id=123912260]
-gravity_scale = 0.0
+[node name="CaveBat" type="CharacterBody2D" unique_id=1816223822]
+collision_layer = 4
+collision_mask = 7
+motion_mode = 1
 script = ExtResource("1_4jumo")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=898958459]
@@ -99,4 +104,6 @@ libraries/ = SubResource("AnimationLibrary_n6p16")
 tree_root = SubResource("AnimationNodeBlendTree_q7uuq")
 advance_expression_base_node = NodePath("..")
 anim_player = NodePath("../AnimationPlayer")
-parameters/StateMachine/FlyState/blend_position = 0.0
+
+[node name="RayCast2D" type="RayCast2D" parent="." unique_id=1357272332]
+target_position = Vector2(8, 0)

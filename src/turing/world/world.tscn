@@ -367,241 +367,245 @@ tile_set = SubResource("TileSet_i7141")
 
 [node name="Player" parent="." unique_id=941693548 instance=ExtResource("3_ptt46")]
 
-[node name="Shrubbery" type="Node2D" parent="." unique_id=233211457]
-
-[node name="Bush" parent="Shrubbery" unique_id=1236801693 instance=ExtResource("4_0ejw7")]
-position = Vector2(113, 113)
-
-[node name="Bush2" parent="Shrubbery" unique_id=768029181 instance=ExtResource("4_0ejw7")]
-position = Vector2(185, 157)
-
-[node name="Bush3" parent="Shrubbery" unique_id=234344676 instance=ExtResource("4_0ejw7")]
-position = Vector2(286, 50)
-
-[node name="Bush4" parent="Shrubbery" unique_id=1035979167 instance=ExtResource("4_0ejw7")]
-position = Vector2(196, -11)
-
-[node name="Bush5" parent="Shrubbery" unique_id=636509864 instance=ExtResource("4_0ejw7")]
-position = Vector2(110, -38)
-
-[node name="Bush6" parent="Shrubbery" unique_id=517869042 instance=ExtResource("4_0ejw7")]
-position = Vector2(-61, 156)
-
-[node name="Bush7" parent="Shrubbery" unique_id=1628062284 instance=ExtResource("4_0ejw7")]
-position = Vector2(78, 191)
-
-[node name="Bush8" parent="Shrubbery" unique_id=1444474843 instance=ExtResource("4_0ejw7")]
-position = Vector2(-61, 68)
-
-[node name="Bush9" parent="Shrubbery" unique_id=198259555 instance=ExtResource("4_0ejw7")]
-position = Vector2(-163, 28)
-
-[node name="Bush10" parent="Shrubbery" unique_id=1027604213 instance=ExtResource("4_0ejw7")]
-position = Vector2(-283, -43)
-
-[node name="Bush11" parent="Shrubbery" unique_id=1764880456 instance=ExtResource("4_0ejw7")]
-position = Vector2(-335, -130)
-
-[node name="Bush12" parent="Shrubbery" unique_id=1529302257 instance=ExtResource("4_0ejw7")]
-position = Vector2(-271, -269)
-
-[node name="Bush13" parent="Shrubbery" unique_id=1395126648 instance=ExtResource("4_0ejw7")]
-position = Vector2(-253, -192)
-
-[node name="Bush14" parent="Shrubbery" unique_id=613062115 instance=ExtResource("4_0ejw7")]
-position = Vector2(-149, -284)
-
-[node name="Bush15" parent="Shrubbery" unique_id=1206729728 instance=ExtResource("4_0ejw7")]
-position = Vector2(-118, -221)
-
-[node name="Bush16" parent="Shrubbery" unique_id=1376147347 instance=ExtResource("4_0ejw7")]
-position = Vector2(-43, -130)
-
-[node name="Bush17" parent="Shrubbery" unique_id=724331563 instance=ExtResource("4_0ejw7")]
-position = Vector2(53, -195)
-
-[node name="Bush18" parent="Shrubbery" unique_id=899606793 instance=ExtResource("4_0ejw7")]
-position = Vector2(97, -118)
-
-[node name="Bush19" parent="Shrubbery" unique_id=2035420291 instance=ExtResource("4_0ejw7")]
-position = Vector2(256, 0)
-
-[node name="Bush20" parent="Shrubbery" unique_id=246906128 instance=ExtResource("4_0ejw7")]
-position = Vector2(186, -115)
-
-[node name="Bush21" parent="Shrubbery" unique_id=971117992 instance=ExtResource("4_0ejw7")]
-position = Vector2(408, 107)
-
-[node name="Bush22" parent="Shrubbery" unique_id=160827349 instance=ExtResource("4_0ejw7")]
-position = Vector2(439, 179)
-
-[node name="Bush23" parent="Shrubbery" unique_id=1180825204 instance=ExtResource("4_0ejw7")]
-position = Vector2(500, 161)
-
-[node name="Bush24" parent="Shrubbery" unique_id=2028549448 instance=ExtResource("4_0ejw7")]
-position = Vector2(531, 267)
-
-[node name="Bush25" parent="Shrubbery" unique_id=129336411 instance=ExtResource("4_0ejw7")]
-position = Vector2(561, 308)
-
-[node name="Bush26" parent="Shrubbery" unique_id=2032008780 instance=ExtResource("4_0ejw7")]
-position = Vector2(498, 408)
-
-[node name="Bush27" parent="Shrubbery" unique_id=932685712 instance=ExtResource("4_0ejw7")]
-position = Vector2(363, 404)
-
-[node name="Bush28" parent="Shrubbery" unique_id=1392298612 instance=ExtResource("4_0ejw7")]
-position = Vector2(269, 334)
-
-[node name="Bush29" parent="Shrubbery" unique_id=2144443757 instance=ExtResource("4_0ejw7")]
-position = Vector2(162, 293)
-
-[node name="Bush30" parent="Shrubbery" unique_id=1600026708 instance=ExtResource("4_0ejw7")]
-position = Vector2(237, 254)
-
-[node name="Tree" parent="Shrubbery" unique_id=609273632 instance=ExtResource("5_5yeck")]
-position = Vector2(202, 71)
-
-[node name="Tree2" parent="Shrubbery" unique_id=1233746301 instance=ExtResource("5_5yeck")]
-position = Vector2(45, 129)
-
-[node name="Tree3" parent="Shrubbery" unique_id=1776172017 instance=ExtResource("5_5yeck")]
-position = Vector2(126, 28)
-
-[node name="Tree4" parent="Shrubbery" unique_id=1023357665 instance=ExtResource("5_5yeck")]
-position = Vector2(44, -47)
-
-[node name="Tree5" parent="Shrubbery" unique_id=2094923574 instance=ExtResource("5_5yeck")]
-position = Vector2(355, 32)
-
-[node name="Tree6" parent="Shrubbery" unique_id=1678025871 instance=ExtResource("5_5yeck")]
-position = Vector2(160, 226)
-
-[node name="Tree7" parent="Shrubbery" unique_id=268180102 instance=ExtResource("5_5yeck")]
-position = Vector2(297, 273)
-
-[node name="Tree8" parent="Shrubbery" unique_id=70548334 instance=ExtResource("5_5yeck")]
-position = Vector2(345, 343)
-
-[node name="Tree9" parent="Shrubbery" unique_id=282647984 instance=ExtResource("5_5yeck")]
-position = Vector2(432, 371)
-
-[node name="Tree10" parent="Shrubbery" unique_id=1128286359 instance=ExtResource("5_5yeck")]
-position = Vector2(494, 332)
-
-[node name="Tree11" parent="Shrubbery" unique_id=636534636 instance=ExtResource("5_5yeck")]
-position = Vector2(502, 224)
-
-[node name="Tree12" parent="Shrubbery" unique_id=2102647753 instance=ExtResource("5_5yeck")]
-position = Vector2(357, 176)
-
-[node name="Tree13" parent="Shrubbery" unique_id=1954837908 instance=ExtResource("5_5yeck")]
-position = Vector2(320, 116)
-
-[node name="Tree14" parent="Shrubbery" unique_id=1461805726 instance=ExtResource("5_5yeck")]
-position = Vector2(-101, 3)
-
-[node name="Tree15" parent="Shrubbery" unique_id=1682053646 instance=ExtResource("5_5yeck")]
-position = Vector2(-199, -22)
-
-[node name="Tree16" parent="Shrubbery" unique_id=1497201248 instance=ExtResource("5_5yeck")]
-position = Vector2(-261, -111)
-
-[node name="Tree17" parent="Shrubbery" unique_id=1176822776 instance=ExtResource("5_5yeck")]
-position = Vector2(-191, -220)
-
-[node name="Tree18" parent="Shrubbery" unique_id=388398858 instance=ExtResource("5_5yeck")]
-position = Vector2(-51, -190)
-
-[node name="Tree19" parent="Shrubbery" unique_id=1014666966 instance=ExtResource("5_5yeck")]
-position = Vector2(-3, -98)
-
-[node name="Grass" parent="Shrubbery" unique_id=1366216247 instance=ExtResource("6_83qxi")]
-position = Vector2(105, 37)
-
-[node name="Grass2" parent="Shrubbery" unique_id=1910809781 instance=ExtResource("6_83qxi")]
-position = Vector2(121, 37)
-
-[node name="Grass3" parent="Shrubbery" unique_id=289824699 instance=ExtResource("6_83qxi")]
-position = Vector2(137, 37)
-
-[node name="Grass4" parent="Shrubbery" unique_id=1355980610 instance=ExtResource("6_83qxi")]
-position = Vector2(120, 83)
-
-[node name="Grass5" parent="Shrubbery" unique_id=2057834227 instance=ExtResource("6_83qxi")]
-position = Vector2(104, 83)
-
-[node name="Grass6" parent="Shrubbery" unique_id=598500516 instance=ExtResource("6_83qxi")]
-position = Vector2(248, 101)
-
-[node name="Grass7" parent="Shrubbery" unique_id=320350020 instance=ExtResource("6_83qxi")]
-position = Vector2(264, 117)
-
-[node name="Grass8" parent="Shrubbery" unique_id=840384423 instance=ExtResource("6_83qxi")]
-position = Vector2(280, 133)
-
-[node name="Grass9" parent="Shrubbery" unique_id=1732964201 instance=ExtResource("6_83qxi")]
-position = Vector2(280, 118)
-
-[node name="Grass10" parent="Shrubbery" unique_id=363222412 instance=ExtResource("6_83qxi")]
-position = Vector2(264, 85)
-
-[node name="Grass11" parent="Shrubbery" unique_id=2062100050 instance=ExtResource("6_83qxi")]
-position = Vector2(281, 102)
-
-[node name="Grass12" parent="Shrubbery" unique_id=1953315477 instance=ExtResource("6_83qxi")]
-position = Vector2(136, 133)
-
-[node name="Grass13" parent="Shrubbery" unique_id=1281993366 instance=ExtResource("6_83qxi")]
-position = Vector2(215, 165)
-
-[node name="Grass14" parent="Shrubbery" unique_id=590233354 instance=ExtResource("6_83qxi")]
-position = Vector2(232, 182)
-
-[node name="Grass15" parent="Shrubbery" unique_id=1723000042 instance=ExtResource("6_83qxi")]
-position = Vector2(248, 198)
-
-[node name="Grass16" parent="Shrubbery" unique_id=1756416549 instance=ExtResource("6_83qxi")]
-position = Vector2(264, 198)
-
-[node name="Grass17" parent="Shrubbery" unique_id=1734096350 instance=ExtResource("6_83qxi")]
-position = Vector2(375, 197)
-
-[node name="Grass18" parent="Shrubbery" unique_id=1383185944 instance=ExtResource("6_83qxi")]
-position = Vector2(359, 197)
-
-[node name="Grass19" parent="Shrubbery" unique_id=131860370 instance=ExtResource("6_83qxi")]
-position = Vector2(344, 197)
-
-[node name="Grass20" parent="Shrubbery" unique_id=162521839 instance=ExtResource("6_83qxi")]
-position = Vector2(424, 198)
-
-[node name="Grass21" parent="Shrubbery" unique_id=1528356973 instance=ExtResource("6_83qxi")]
-position = Vector2(440, 198)
-
-[node name="Grass22" parent="Shrubbery" unique_id=400548109 instance=ExtResource("6_83qxi")]
-position = Vector2(56, 69)
-
-[node name="Grass23" parent="Shrubbery" unique_id=386219649 instance=ExtResource("6_83qxi")]
-position = Vector2(88, 22)
-
-[node name="Grass24" parent="Shrubbery" unique_id=499524228 instance=ExtResource("6_83qxi")]
-position = Vector2(-24, 5)
-
-[node name="Grass25" parent="Shrubbery" unique_id=231679423 instance=ExtResource("6_83qxi")]
-position = Vector2(-40, -11)
-
-[node name="Grass26" parent="Shrubbery" unique_id=1010700808 instance=ExtResource("6_83qxi")]
-position = Vector2(-56, -26)
-
-[node name="Grass27" parent="Shrubbery" unique_id=1745057282 instance=ExtResource("6_83qxi")]
-position = Vector2(-56, -11)
-
-[node name="Grass28" parent="Shrubbery" unique_id=58380275 instance=ExtResource("6_83qxi")]
-position = Vector2(-72, -11)
-
-[node name="Grass29" parent="Shrubbery" unique_id=87657715 instance=ExtResource("6_83qxi")]
-position = Vector2(-56, 4)
-
 [node name="CaveBat" parent="." unique_id=123912260 instance=ExtResource("7_t0nsl")]
 position = Vector2(157, 79)
+
+[node name="CaveBat2" parent="." unique_id=1816223822 instance=ExtResource("7_t0nsl")]
+position = Vector2(-285, -171)
+
+[node name="CaveBat3" parent="." unique_id=1833393121 instance=ExtResource("7_t0nsl")]
+position = Vector2(527, 299)
+
+[node name="Bush" parent="." unique_id=1236801693 instance=ExtResource("4_0ejw7")]
+position = Vector2(113, 113)
+
+[node name="Bush2" parent="." unique_id=768029181 instance=ExtResource("4_0ejw7")]
+position = Vector2(185, 157)
+
+[node name="Bush3" parent="." unique_id=234344676 instance=ExtResource("4_0ejw7")]
+position = Vector2(286, 50)
+
+[node name="Bush4" parent="." unique_id=1035979167 instance=ExtResource("4_0ejw7")]
+position = Vector2(196, -11)
+
+[node name="Bush5" parent="." unique_id=636509864 instance=ExtResource("4_0ejw7")]
+position = Vector2(110, -38)
+
+[node name="Bush6" parent="." unique_id=517869042 instance=ExtResource("4_0ejw7")]
+position = Vector2(-61, 156)
+
+[node name="Bush7" parent="." unique_id=1628062284 instance=ExtResource("4_0ejw7")]
+position = Vector2(78, 191)
+
+[node name="Bush8" parent="." unique_id=1444474843 instance=ExtResource("4_0ejw7")]
+position = Vector2(-61, 68)
+
+[node name="Bush9" parent="." unique_id=198259555 instance=ExtResource("4_0ejw7")]
+position = Vector2(-163, 28)
+
+[node name="Bush10" parent="." unique_id=1027604213 instance=ExtResource("4_0ejw7")]
+position = Vector2(-283, -43)
+
+[node name="Bush11" parent="." unique_id=1764880456 instance=ExtResource("4_0ejw7")]
+position = Vector2(-335, -130)
+
+[node name="Bush12" parent="." unique_id=1529302257 instance=ExtResource("4_0ejw7")]
+position = Vector2(-271, -269)
+
+[node name="Bush13" parent="." unique_id=1395126648 instance=ExtResource("4_0ejw7")]
+position = Vector2(-253, -192)
+
+[node name="Bush14" parent="." unique_id=613062115 instance=ExtResource("4_0ejw7")]
+position = Vector2(-149, -284)
+
+[node name="Bush15" parent="." unique_id=1206729728 instance=ExtResource("4_0ejw7")]
+position = Vector2(-118, -221)
+
+[node name="Bush16" parent="." unique_id=1376147347 instance=ExtResource("4_0ejw7")]
+position = Vector2(-43, -130)
+
+[node name="Bush17" parent="." unique_id=724331563 instance=ExtResource("4_0ejw7")]
+position = Vector2(53, -195)
+
+[node name="Bush18" parent="." unique_id=899606793 instance=ExtResource("4_0ejw7")]
+position = Vector2(97, -118)
+
+[node name="Bush19" parent="." unique_id=2035420291 instance=ExtResource("4_0ejw7")]
+position = Vector2(256, 0)
+
+[node name="Bush20" parent="." unique_id=246906128 instance=ExtResource("4_0ejw7")]
+position = Vector2(186, -115)
+
+[node name="Bush21" parent="." unique_id=971117992 instance=ExtResource("4_0ejw7")]
+position = Vector2(408, 107)
+
+[node name="Bush22" parent="." unique_id=160827349 instance=ExtResource("4_0ejw7")]
+position = Vector2(439, 179)
+
+[node name="Bush23" parent="." unique_id=1180825204 instance=ExtResource("4_0ejw7")]
+position = Vector2(500, 161)
+
+[node name="Bush24" parent="." unique_id=2028549448 instance=ExtResource("4_0ejw7")]
+position = Vector2(531, 267)
+
+[node name="Bush25" parent="." unique_id=129336411 instance=ExtResource("4_0ejw7")]
+position = Vector2(561, 308)
+
+[node name="Bush26" parent="." unique_id=2032008780 instance=ExtResource("4_0ejw7")]
+position = Vector2(498, 408)
+
+[node name="Bush27" parent="." unique_id=932685712 instance=ExtResource("4_0ejw7")]
+position = Vector2(363, 404)
+
+[node name="Bush28" parent="." unique_id=1392298612 instance=ExtResource("4_0ejw7")]
+position = Vector2(269, 334)
+
+[node name="Bush29" parent="." unique_id=2144443757 instance=ExtResource("4_0ejw7")]
+position = Vector2(162, 293)
+
+[node name="Bush30" parent="." unique_id=1600026708 instance=ExtResource("4_0ejw7")]
+position = Vector2(237, 254)
+
+[node name="Tree" parent="." unique_id=609273632 instance=ExtResource("5_5yeck")]
+position = Vector2(202, 71)
+
+[node name="Tree2" parent="." unique_id=1233746301 instance=ExtResource("5_5yeck")]
+position = Vector2(45, 129)
+
+[node name="Tree3" parent="." unique_id=1776172017 instance=ExtResource("5_5yeck")]
+position = Vector2(126, 28)
+
+[node name="Tree4" parent="." unique_id=1023357665 instance=ExtResource("5_5yeck")]
+position = Vector2(44, -47)
+
+[node name="Tree5" parent="." unique_id=2094923574 instance=ExtResource("5_5yeck")]
+position = Vector2(355, 32)
+
+[node name="Tree6" parent="." unique_id=1678025871 instance=ExtResource("5_5yeck")]
+position = Vector2(160, 226)
+
+[node name="Tree7" parent="." unique_id=268180102 instance=ExtResource("5_5yeck")]
+position = Vector2(297, 273)
+
+[node name="Tree8" parent="." unique_id=70548334 instance=ExtResource("5_5yeck")]
+position = Vector2(345, 343)
+
+[node name="Tree9" parent="." unique_id=282647984 instance=ExtResource("5_5yeck")]
+position = Vector2(432, 371)
+
+[node name="Tree10" parent="." unique_id=1128286359 instance=ExtResource("5_5yeck")]
+position = Vector2(494, 332)
+
+[node name="Tree11" parent="." unique_id=636534636 instance=ExtResource("5_5yeck")]
+position = Vector2(502, 224)
+
+[node name="Tree12" parent="." unique_id=2102647753 instance=ExtResource("5_5yeck")]
+position = Vector2(357, 176)
+
+[node name="Tree13" parent="." unique_id=1954837908 instance=ExtResource("5_5yeck")]
+position = Vector2(320, 116)
+
+[node name="Tree14" parent="." unique_id=1461805726 instance=ExtResource("5_5yeck")]
+position = Vector2(-101, 3)
+
+[node name="Tree15" parent="." unique_id=1682053646 instance=ExtResource("5_5yeck")]
+position = Vector2(-199, -22)
+
+[node name="Tree16" parent="." unique_id=1497201248 instance=ExtResource("5_5yeck")]
+position = Vector2(-261, -111)
+
+[node name="Tree17" parent="." unique_id=1176822776 instance=ExtResource("5_5yeck")]
+position = Vector2(-191, -220)
+
+[node name="Tree18" parent="." unique_id=388398858 instance=ExtResource("5_5yeck")]
+position = Vector2(-51, -190)
+
+[node name="Tree19" parent="." unique_id=1014666966 instance=ExtResource("5_5yeck")]
+position = Vector2(-3, -98)
+
+[node name="Grass" parent="." unique_id=1366216247 instance=ExtResource("6_83qxi")]
+position = Vector2(105, 37)
+
+[node name="Grass2" parent="." unique_id=1910809781 instance=ExtResource("6_83qxi")]
+position = Vector2(121, 37)
+
+[node name="Grass3" parent="." unique_id=289824699 instance=ExtResource("6_83qxi")]
+position = Vector2(137, 37)
+
+[node name="Grass4" parent="." unique_id=1355980610 instance=ExtResource("6_83qxi")]
+position = Vector2(120, 83)
+
+[node name="Grass5" parent="." unique_id=2057834227 instance=ExtResource("6_83qxi")]
+position = Vector2(104, 83)
+
+[node name="Grass6" parent="." unique_id=598500516 instance=ExtResource("6_83qxi")]
+position = Vector2(248, 101)
+
+[node name="Grass7" parent="." unique_id=320350020 instance=ExtResource("6_83qxi")]
+position = Vector2(264, 117)
+
+[node name="Grass8" parent="." unique_id=840384423 instance=ExtResource("6_83qxi")]
+position = Vector2(280, 133)
+
+[node name="Grass9" parent="." unique_id=1732964201 instance=ExtResource("6_83qxi")]
+position = Vector2(280, 118)
+
+[node name="Grass10" parent="." unique_id=363222412 instance=ExtResource("6_83qxi")]
+position = Vector2(264, 85)
+
+[node name="Grass11" parent="." unique_id=2062100050 instance=ExtResource("6_83qxi")]
+position = Vector2(281, 102)
+
+[node name="Grass12" parent="." unique_id=1953315477 instance=ExtResource("6_83qxi")]
+position = Vector2(136, 133)
+
+[node name="Grass13" parent="." unique_id=1281993366 instance=ExtResource("6_83qxi")]
+position = Vector2(215, 165)
+
+[node name="Grass14" parent="." unique_id=590233354 instance=ExtResource("6_83qxi")]
+position = Vector2(232, 182)
+
+[node name="Grass15" parent="." unique_id=1723000042 instance=ExtResource("6_83qxi")]
+position = Vector2(248, 198)
+
+[node name="Grass16" parent="." unique_id=1756416549 instance=ExtResource("6_83qxi")]
+position = Vector2(264, 198)
+
+[node name="Grass17" parent="." unique_id=1734096350 instance=ExtResource("6_83qxi")]
+position = Vector2(375, 197)
+
+[node name="Grass18" parent="." unique_id=1383185944 instance=ExtResource("6_83qxi")]
+position = Vector2(359, 197)
+
+[node name="Grass19" parent="." unique_id=131860370 instance=ExtResource("6_83qxi")]
+position = Vector2(344, 197)
+
+[node name="Grass20" parent="." unique_id=162521839 instance=ExtResource("6_83qxi")]
+position = Vector2(424, 198)
+
+[node name="Grass21" parent="." unique_id=1528356973 instance=ExtResource("6_83qxi")]
+position = Vector2(440, 198)
+
+[node name="Grass22" parent="." unique_id=400548109 instance=ExtResource("6_83qxi")]
+position = Vector2(56, 69)
+
+[node name="Grass23" parent="." unique_id=386219649 instance=ExtResource("6_83qxi")]
+position = Vector2(88, 22)
+
+[node name="Grass24" parent="." unique_id=499524228 instance=ExtResource("6_83qxi")]
+position = Vector2(-24, 5)
+
+[node name="Grass25" parent="." unique_id=231679423 instance=ExtResource("6_83qxi")]
+position = Vector2(-40, -11)
+
+[node name="Grass26" parent="." unique_id=1010700808 instance=ExtResource("6_83qxi")]
+position = Vector2(-56, -26)
+
+[node name="Grass27" parent="." unique_id=1745057282 instance=ExtResource("6_83qxi")]
+position = Vector2(-56, -11)
+
+[node name="Grass28" parent="." unique_id=58380275 instance=ExtResource("6_83qxi")]
+position = Vector2(-72, -11)
+
+[node name="Grass29" parent="." unique_id=87657715 instance=ExtResource("6_83qxi")]
+position = Vector2(-56, 4)
