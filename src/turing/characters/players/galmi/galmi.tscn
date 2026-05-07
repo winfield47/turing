@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://dn3ullhljm2is"]
+
+[ext_resource type="Script" uid="uid://7bsi2x4vtofx" path="res://characters/players/galmi/galmi.gd" id="1_2147m"]
+[ext_resource type="Texture2D" uid="uid://cofxi0s6tn34i" path="res://characters/players/galmi/1.png" id="2_2147m"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_xb4v1"]
+radius = 2.0
+height = 4.0
+
+[node name="galmi" type="CharacterBody2D" unique_id=607435773]
+script = ExtResource("1_2147m")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1064830603]
+scale = Vector2(0.09375, 0.093023255)
+texture = ExtResource("2_2147m")
+region_enabled = true
+region_rect = Rect2(0, 0, 64, 43)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=157719630]
+shape = SubResource("CapsuleShape2D_xb4v1")
