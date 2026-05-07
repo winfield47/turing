@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://76rknydx3jlo" path="res://scripts/players/player.gd" id="1_ldeu4"]
 [ext_resource type="Texture2D" uid="uid://c0rtdc50gwev1" path="res://art/player/player.png" id="1_plyga"]
+[ext_resource type="Texture2D" uid="uid://bpgm4fvcaesqc" path="res://art/shadows/medium_shadow.png" id="3_kc87p"]
 
 [sub_resource type="Animation" id="Animation_ldeu4"]
 length = 0.001
@@ -462,6 +463,7 @@ motion_mode = 1
 script = ExtResource("1_ldeu4")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1468319103]
+position = Vector2(0.5583954, -12.396269)
 texture = ExtResource("1_plyga")
 hframes = 60
 
@@ -480,3 +482,11 @@ parameters/StateMachine/RollState/blend_position = Vector2(0.00086426735, -0.137
 [node name="Camera2D" type="Camera2D" parent="." unique_id=730249230]
 process_callback = 0
 position_smoothing_enabled = true
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." unique_id=1565607762]
+position = Vector2(0.030651093, -12.842983)
+polygon = PackedVector2Array(0, 13, -4, 6, 0, 0, 4, 6)
+
+[node name="ShadowSprite2D" type="Sprite2D" parent="." unique_id=1727225993]
+show_behind_parent = true
+texture = ExtResource("3_kc87p")
