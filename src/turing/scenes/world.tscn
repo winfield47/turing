@@ -549,3 +549,54 @@ position = Vector2(281, 102)
 
 [node name="Grass12" parent="." unique_id=1953315477 instance=ExtResource("6_qfnet")]
 position = Vector2(136, 133)
+
+[node name="Grass13" parent="." unique_id=1281993366 instance=ExtResource("6_qfnet")]
+position = Vector2(215, 165)
+
+[node name="Grass14" parent="." unique_id=590233354 instance=ExtResource("6_qfnet")]
+position = Vector2(232, 182)
+
+[node name="Grass15" parent="." unique_id=1723000042 instance=ExtResource("6_qfnet")]
+position = Vector2(248, 198)
+
+[node name="Grass16" parent="." unique_id=1756416549 instance=ExtResource("6_qfnet")]
+position = Vector2(264, 198)
+
+[node name="Grass17" parent="." unique_id=1734096350 instance=ExtResource("6_qfnet")]
+position = Vector2(375, 197)
+
+[node name="Grass18" parent="." unique_id=1383185944 instance=ExtResource("6_qfnet")]
+position = Vector2(359, 197)
+
+[node name="Grass19" parent="." unique_id=131860370 instance=ExtResource("6_qfnet")]
+position = Vector2(344, 197)
+
+[node name="Grass20" parent="." unique_id=162521839 instance=ExtResource("6_qfnet")]
+position = Vector2(424, 198)
+
+[node name="Grass21" parent="." unique_id=1528356973 instance=ExtResource("6_qfnet")]
+position = Vector2(440, 198)
+
+[node name="Grass22" parent="." unique_id=400548109 instance=ExtResource("6_qfnet")]
+position = Vector2(56, 69)
+
+[node name="Grass23" parent="." unique_id=386219649 instance=ExtResource("6_qfnet")]
+position = Vector2(88, 22)
+
+[node name="Grass24" parent="." unique_id=499524228 instance=ExtResource("6_qfnet")]
+position = Vector2(-24, 5)
+
+[node name="Grass25" parent="." unique_id=231679423 instance=ExtResource("6_qfnet")]
+position = Vector2(-40, -11)
+
+[node name="Grass26" parent="." unique_id=1010700808 instance=ExtResource("6_qfnet")]
+position = Vector2(-56, -26)
+
+[node name="Grass27" parent="." unique_id=1745057282 instance=ExtResource("6_qfnet")]
+position = Vector2(-56, -11)
+
+[node name="Grass28" parent="." unique_id=58380275 instance=ExtResource("6_qfnet")]
+position = Vector2(-72, -11)
+
+[node name="Grass29" parent="." unique_id=87657715 instance=ExtResource("6_qfnet")]
+position = Vector2(-56, 4)
