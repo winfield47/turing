@@ -19,6 +19,18 @@ tracks/0/keys = {
 "update": 1,
 "values": [0]
 }
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Area2D/CollisionPolygon2D:polygon")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [PackedVector2Array()]
+}
 
 [sub_resource type="Animation" id="Animation_fsrjl"]
 resource_name = "attack_down"
@@ -35,6 +47,18 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 1,
 "values": [36, 37, 38, 39]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Area2D/CollisionPolygon2D:polygon")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 1,
+"values": [PackedVector2Array(2, -5, 2, -11, 21, -12, 24, -8, 21, -4), PackedVector2Array(-4, 1, 7, 1, 16, -6, 19, 0, 17, 12, 9, 20, -5, 23, -8, 16, -11, 6), PackedVector2Array(-15, -9, -32, 2, -16, 19, 1, 23, 19, 17, 21, 4, 19, -8, 12, -1, 1, 3), PackedVector2Array(-26, -14, -25, -1, -17, 8, -11, 7, -12, -1, -6, -5, -7, -12), PackedVector2Array()]
 }
 
 [sub_resource type="Animation" id="Animation_mh0hk"]
@@ -452,7 +476,6 @@ transitions = ["Start", "MoveState", SubResource("AnimationNodeStateMachineTrans
 graph_offset = Vector2(-107, -121)
 
 [sub_resource type="AnimationNodeBlendTree" id="AnimationNodeBlendTree_xifll"]
-graph_offset = Vector2(-171, 29)
 nodes/output/position = Vector2(320, 180)
 nodes/StateMachine/node = SubResource("AnimationNodeStateMachine_dhv88")
 nodes/StateMachine/position = Vector2(40, 140)
@@ -492,3 +515,5 @@ show_behind_parent = true
 texture = ExtResource("3_kc87p")
 
 [node name="Area2D" type="Area2D" parent="." unique_id=269646555]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D" unique_id=1548005906]
