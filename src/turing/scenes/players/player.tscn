@@ -490,3 +490,5 @@ polygon = PackedVector2Array(0, 13, -4, 6, 0, 0, 4, 6)
 [node name="ShadowSprite2D" type="Sprite2D" parent="." unique_id=1727225993]
 show_behind_parent = true
 texture = ExtResource("3_kc87p")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=269646555]
