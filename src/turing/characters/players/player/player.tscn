@@ -2,7 +2,16 @@
 
 [ext_resource type="Script" uid="uid://76rknydx3jlo" path="res://characters/players/player/player.gd" id="1_ldeu4"]
 [ext_resource type="Texture2D" uid="uid://c0rtdc50gwev1" path="res://characters/players/player/player.png" id="1_plyga"]
+[ext_resource type="Script" uid="uid://b8yenxde5fkxs" path="res://stats.gd" id="2_7qc0j"]
 [ext_resource type="Texture2D" uid="uid://bpgm4fvcaesqc" path="res://art/shadows/medium_shadow.png" id="3_kc87p"]
+[ext_resource type="Script" uid="uid://bthugg4hl83ki" path="res://damage_boxes/hitbox.gd" id="4_tog4m"]
+[ext_resource type="Script" uid="uid://x2qrqlog5bgu" path="res://damage_boxes/hurtbox.gd" id="6_3o27y"]
+
+[sub_resource type="Resource" id="Resource_3o27y"]
+script = ExtResource("2_7qc0j")
+health = 3
+max_health = 3
+metadata/_custom_type_script = "uid://b8yenxde5fkxs"
 
 [sub_resource type="Animation" id="Animation_ldeu4"]
 length = 0.001
@@ -22,7 +31,7 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("Area2D/CollisionPolygon2D:polygon")
+tracks/1/path = NodePath("SwordHitBox/CollisionPolygon2D:polygon")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
@@ -30,6 +39,30 @@ tracks/1/keys = {
 "transitions": PackedFloat32Array(1),
 "update": 0,
 "values": [PackedVector2Array()]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("SwordHitBox:knockback_direction")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 1)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Hurtbox/CollisionShape2D:disabled")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
 }
 
 [sub_resource type="Animation" id="Animation_fsrjl"]
@@ -51,7 +84,7 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("Area2D/CollisionPolygon2D:polygon")
+tracks/1/path = NodePath("SwordHitBox/CollisionPolygon2D:polygon")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
@@ -59,6 +92,18 @@ tracks/1/keys = {
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1),
 "update": 1,
 "values": [PackedVector2Array(3, -32, 2, -21, 23, -22, 29, -27, 20, -33), PackedVector2Array(18, -31, 8, -18, -6, -19, -15, -7, -1, 7, 19, -3, 23, -20), PackedVector2Array(-21, -31, -25, -10, -5, 7, 15, 1, 24, -19, 20, -29, 10, -17, -6, -27), PackedVector2Array(-15, -39, -26, -28, -17, -9, -9, -12, -10, -21, 3, -25), PackedVector2Array()]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("SwordHitBox:knockback_direction")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Vector2(0, 1)]
 }
 
 [sub_resource type="Animation" id="Animation_mh0hk"]
@@ -80,7 +125,7 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("Area2D/CollisionPolygon2D:polygon")
+tracks/1/path = NodePath("SwordHitBox/CollisionPolygon2D:polygon")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
@@ -88,6 +133,18 @@ tracks/1/keys = {
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1),
 "update": 1,
 "values": [PackedVector2Array(4, -30, -2, -29, -3, -49, 1, -56, 6, -48), PackedVector2Array(-7, -21, -17, -14, -31, -22, -23, -43, -9, -50, 12, -45, -3, -35, -7, -22), PackedVector2Array(6, -14, -7, -4, -31, -21, -27, -41, -5, -52, 8, -43, -7, -36, -6, -29, 4, -27), PackedVector2Array(-16, -17, -6, -4, 15, -5, 16, -18, 3, -32, -3, -20), PackedVector2Array()]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("SwordHitBox:knockback_direction")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Vector2(-1, 0)]
 }
 
 [sub_resource type="Animation" id="Animation_18rgo"]
@@ -109,7 +166,7 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("Area2D/CollisionPolygon2D:polygon")
+tracks/1/path = NodePath("SwordHitBox/CollisionPolygon2D:polygon")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
@@ -117,6 +174,18 @@ tracks/1/keys = {
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1),
 "update": 1,
 "values": [PackedVector2Array(0, -31, 4, -31, 5, -47, 2, -53, -1, -47), PackedVector2Array(9, -22, 23, -17, 29, -21, 29, -21, 31, -29, 26, -42, 14, -49, -6, -46, 7, -36), PackedVector2Array(8, -7, -2, -13, 4, -27, 14, -31, 11, -39, -2, -44, 16, -47, 27, -39, 33, -26, 26, -12), PackedVector2Array(18, -15, 5, -4, -8, -8, -7, -19, 0, -31, 7, -21), PackedVector2Array()]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("SwordHitBox:knockback_direction")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Vector2(1, 0)]
 }
 
 [sub_resource type="Animation" id="Animation_wb5ey"]
@@ -138,7 +207,7 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("Area2D/CollisionPolygon2D:polygon")
+tracks/1/path = NodePath("SwordHitBox/CollisionPolygon2D:polygon")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
@@ -146,6 +215,18 @@ tracks/1/keys = {
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1),
 "update": 1,
 "values": [PackedVector2Array(-2, -28, -19, -26, -28, -31, -19, -37, -2, -35), PackedVector2Array(-18, -24, -23, -40, -12, -54, 9, -57, 13, -44, 0, -34, -11, -30), PackedVector2Array(-21, -28, -17, -50, 4, -57, 24, -46, 21, -25, 2, -27, -3, -38, -11, -35), PackedVector2Array(17, -18, 2, -25, 4, -34, 14, -36, 11, -52, 27, -40, 26, -23), PackedVector2Array()]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("SwordHitBox:knockback_direction")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Vector2(0, -1)]
 }
 
 [sub_resource type="Animation" id="Animation_vjh8g"]
@@ -164,6 +245,18 @@ tracks/0/keys = {
 "update": 1,
 "values": [55, 56, 57, 58, 59]
 }
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Hurtbox/CollisionShape2D:disabled")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
 
 [sub_resource type="Animation" id="Animation_f1232"]
 resource_name = "roll_left"
@@ -180,6 +273,18 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1),
 "update": 1,
 "values": [50, 51, 52, 53, 54]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Hurtbox/CollisionShape2D:disabled")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
 }
 
 [sub_resource type="Animation" id="Animation_v7vuu"]
@@ -198,6 +303,18 @@ tracks/0/keys = {
 "update": 1,
 "values": [40, 41, 42, 43, 44]
 }
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Hurtbox/CollisionShape2D:disabled")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
 
 [sub_resource type="Animation" id="Animation_bdc4e"]
 resource_name = "roll_up"
@@ -214,6 +331,18 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1),
 "update": 1,
 "values": [45, 46, 47, 48, 49]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Hurtbox/CollisionShape2D:disabled")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
 }
 
 [sub_resource type="Animation" id="Animation_kc87p"]
@@ -517,11 +646,76 @@ nodes/StateMachine/node = SubResource("AnimationNodeStateMachine_dhv88")
 nodes/StateMachine/position = Vector2(40, 140)
 node_connections = [&"output", 0, &"StateMachine"]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dvlrp"]
+size = Vector2(8, 8)
+
+[sub_resource type="Animation" id="Animation_o51b3"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Hurtbox/CollisionShape2D:disabled")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
+[sub_resource type="Animation" id="Animation_wksfm"]
+resource_name = "blink"
+length = 1.2
+step = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.70000005, 0.8, 0.9, 1, 1.1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [false, true, false, true, false, true, false, true, false, true, false, true]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Hurtbox/CollisionShape2D:disabled")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_b6deh"]
+_data = {
+&"RESET": SubResource("Animation_o51b3"),
+&"blink": SubResource("Animation_wksfm")
+}
+
 [node name="Player" type="CharacterBody2D" unique_id=941693548 groups=["player"]]
 collision_layer = 2
-collision_mask = 5
 motion_mode = 1
 script = ExtResource("1_ldeu4")
+stats = SubResource("Resource_3o27y")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1468319103]
 position = Vector2(0.5583954, -12.396269)
@@ -559,7 +753,25 @@ polygon = PackedVector2Array(0, 13, -4, 6, 0, 0, 4, 6)
 show_behind_parent = true
 texture = ExtResource("3_kc87p")
 
-[node name="Area2D" type="Area2D" parent="." unique_id=269646555]
+[node name="SwordHitBox" type="Area2D" parent="." unique_id=9774492]
+collision_layer = 16
+collision_mask = 16
+script = ExtResource("4_tog4m")
+knockback_direction = Vector2(0, 1)
+metadata/_custom_type_script = "uid://bthugg4hl83ki"
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D" unique_id=1548005906]
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="SwordHitBox" unique_id=1548005906]
 position = Vector2(-1, 19)
+
+[node name="Hurtbox" type="Area2D" parent="." unique_id=1888686097]
+collision_layer = 8
+collision_mask = 8
+script = ExtResource("6_3o27y")
+metadata/_custom_type_script = "uid://x2qrqlog5bgu"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hurtbox" unique_id=51060262]
+position = Vector2(0, -7)
+shape = SubResource("RectangleShape2D_dvlrp")
+
+[node name="EffectAnimationPlayer" type="AnimationPlayer" parent="." unique_id=1635480529]
+libraries/ = SubResource("AnimationLibrary_b6deh")
