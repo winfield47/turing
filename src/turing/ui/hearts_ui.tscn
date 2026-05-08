@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://7itoa82m73kk"]
+
+[node name="HeartsUI" type="Control" unique_id=76355844]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
